@@ -1,0 +1,83 @@
+/* Base layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  font-size: 18px;
+}
+
+/* Headings */
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+h3 {
+  margin-top: 25px;
+}
+
+/* Text */
+p {
+  font-size: 1.05rem;
+}
+
+/* Form elements */
+label {
+  display: block;
+  margin-top: 12px;
+}
+
+select,
+textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 6px;
+}
+
+/* Buttons */
+button {
+  font-size: 1rem;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+/* Map */
+#map {
+  height: 500px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Legend */
+#legend {
+  background: white;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  width: fit-content;
+}
+
+/* Consent box */
+.consent {
+  background: #f4f4f4;
+  padding: 10px;
+  border-left: 4px solid #999;
+}
+
+/* Popup styling */
+.popup-theme {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.popup-comment {
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.popup-delete {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+}
