@@ -2,11 +2,12 @@
    Map initialization
    ========================= */
 
-const map = L.map("map").setView([47.0707, 15.4395], 13);
+const map = L.map("map", { zoomControl: false }).setView([47.0707, 15.4395], 13);
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "© OpenStreetMap contributors"
 }).addTo(map);
+
 
 
 /* =========================
@@ -20,7 +21,24 @@ const themeColors = {
   cool: "blue"
 };
 
+// Optional: different marker sizes per theme
+const themeRadius = {
+  safe: 7,
+  stressful: 9,
+  heated: 10,
+  cool: 8
+};
+
+// Optional: emoji title per theme
+const themeLabel = {
+  safe: "🟢 SAFE PLACE",
+  stressful: "🔴 STRESSFUL PLACE",
+  heated: "🟠 HEATED / VERY HOT",
+  cool: "🔵 COOLING PLACE"
+};
+
 let points = [];
+
 
 
 /* =========================
@@ -36,18 +54,22 @@ map.on("click", function (e) {
   const gender = document.getElementById("gender").value;
   const transport = document.getElementById("transport").value;
 
+  // Check: Theme selected?
   if (!theme) {
     alert("Please select a theme before clicking on the map.");
     return;
   }
 
+  // Create marker
   const marker = L.circleMarker(e.latlng, {
     color: themeColors[theme],
-    radius: 6,
+    fillColor: themeColors[theme],
+    radius: themeRadius[theme] || 6,
     weight: 2,
-    fillOpacity: 0.7
+    fillOpacity: 0.75
   }).addTo(map);
 
+  // Save point info
   const pointData = {
     theme,
     comment,
@@ -63,17 +85,29 @@ map.on("click", function (e) {
   points.push(pointData);
   const index = points.length - 1;
 
+  // Popup content (more informative)
   marker.bindPopup(`
   <div class="popup-content">
-    <div class="popup-theme">${theme.toUpperCase()}</div>
-    ${comment ? `<div class="popup-comment">${comment}</div>` : ""}
-    <button class="popup-delete" onclick="deletePoint(${index})">
+    <div class="popup-theme">${themeLabel[theme] || theme.toUpperCase()}</div>
+
+    ${comment ? `<div class="popup-comment">"${comment}"</div>` : ""}
+
+    <button class="popup-delete" onclick="deletePoint(${index})" style="margin-top: 10px;">
       Delete point
     </button>
   </div>
 `);
 
+  
+  
+
+  // ✅ open popup instantly (so user sees feedback)
+  marker.openPopup();
+
+  // Reset comment field after placing a point
   document.getElementById("comment").value = "";
+
+  // Optional message
 });
 
 
@@ -87,6 +121,31 @@ function deletePoint(index) {
 
   map.removeLayer(point.marker);
   points[index] = null;
+
+  
+}
+
+
+/* =========================
+   Save file helper function
+   ========================= */
+
+function saveToFile(content, fileName) {
+  const blob = new Blob([JSON.stringify(content, null, 2)], {
+    type: "application/json"
+  });
+
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = fileName;
+  document.body.appendChild(link);
+  link.click();
+
+  // Cleanup
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
 }
 
 
@@ -117,14 +176,32 @@ function downloadData() {
       }))
   };
 
-  const blob = new Blob(
-    [JSON.stringify(geojson, null, 2)],
-    { type: "application/json" }
-  );
+  if (geojson.features.length === 0) {
+    alert("No points to download!");
+    return;
+  }
 
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "ppgis_urban_experience.geojson";
-  a.click();
+  const fileName = "ppgis_urban_experience_" + Date.now() + ".geojson";
+  saveToFile(geojson, fileName);
+
+  alert("GeoJSON downloaded successfully!");
+
+  setTimeout(() => {
+
+    // remove markers
+    points.forEach(p => {
+      if (p !== null) map.removeLayer(p.marker);
+    });
+    points = [];
+
+    // reset survey form
+    document.getElementById("theme").value = "";
+    document.getElementById("comment").value = "";
+    document.getElementById("residency").value = "";
+    document.getElementById("age").value = "";
+    document.getElementById("gender").value = "";
+    document.getElementById("transport").value = "";
+
+
+  }, 100);
 }
