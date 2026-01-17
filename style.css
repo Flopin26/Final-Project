@@ -2,6 +2,10 @@
    Global layout
    ========================= */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   margin: 0;
@@ -13,13 +17,12 @@ body {
 
 /* Centered page container */
 .container {
-  max-width: 1400px;   /* was 1100px */
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 10px 16px;  /* smaller side padding */
+  padding: 10px 16px;
 }
 
-
-/* === NEW: 2-column layout wrapper === */
+/* === 2-column layout wrapper === */
 .layout {
   display: flex;
   gap: 20px;
@@ -28,12 +31,13 @@ body {
 
 /* Left (form) column */
 .left-panel {
-  flex: 0 0 320px;   /* fixed width-ish for form */
+  flex: 0 0 320px;
 }
 
 /* Right (map) column */
 .right-panel {
-  flex: 1 1 auto;    /* map takes remaining space */
+  flex: 1 1 auto;
+  width: 100%;
 }
 
 /* Stack on small screens */
@@ -169,12 +173,20 @@ button:active {
   border-radius: 14px;
   overflow: hidden;
   border: 1px solid #e5e7eb;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0,  0, 0.08);
 }
 
+/* Desktop map height */
 #map {
-  height: 650px;   /* keep fixed height so Leaflet renders well */
+  height: 650px;
   width: 100%;
+}
+
+/* Mobile map height fix */
+@media (max-width: 768px) {
+  #map {
+    height: 50vh; /* try 60vh if you want it bigger */
+  }
 }
 
 /* =========================
