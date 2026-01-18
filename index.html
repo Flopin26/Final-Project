@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de-AT">
 <head>
   <meta charset="UTF-8">
 
-  <!-- IMPORTANT for mobile -->
+  <!-- Viewport: important for mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>PPGIS Urban Experience Survey</title>
+  <!-- Basic SEO and accessibility -->
+  <title>Urban Experience Mapping | PPGIS Graz Survey</title>
+  <meta name="description"
+        content="PPGIS survey mapping how people experience places in Graz as safe, stressful, heated, or cooling. Anonymous university course project.">
 
   <!-- Leaflet styles -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet"
+        href="https://unpkg.com/leaflet/dist/leaflet.css">
 
   <!-- Custom styles -->
+  <!-- If you move CSS to src/, change to href="src/style.css" -->
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -36,11 +41,11 @@
       </p>
     </header>
 
-    <!-- Two-column layout: left = form, right = map -->
-    <div class="layout">
+    <!-- Main content: left = form, right = map -->
+    <main class="layout" aria-label="Urban experience mapping form and map">
 
       <!-- LEFT: instructions + form -->
-      <div class="left-panel">
+      <section class="left-panel" aria-label="Survey form">
 
         <p>
           Select a theme and click on the map to mark places you experience as safe,
@@ -49,7 +54,7 @@
 
         <!-- Theme selection -->
         <label for="theme">Theme:</label>
-        <select id="theme">
+        <select id="theme" name="theme">
           <option value="">-- Select a theme --</option>
           <option value="safe">Safe place</option>
           <option value="stressful">Stressful place</option>
@@ -59,13 +64,13 @@
 
         <!-- Optional comment -->
         <label for="comment">Why did you choose this place? (optional)</label>
-        <textarea id="comment" rows="3"></textarea>
+        <textarea id="comment" name="comment" rows="3"></textarea>
 
         <!-- Demographic section -->
         <h3>About you</h3>
 
         <label for="residency">How long have you lived in Graz?</label>
-        <select id="residency">
+        <select id="residency" name="residency">
           <option value="">Prefer not to say</option>
           <option value="visitor">I do not live in Graz</option>
           <option value="<1">Less than 1 year</option>
@@ -75,7 +80,7 @@
         </select>
 
         <label for="age">Age group:</label>
-        <select id="age">
+        <select id="age" name="age">
           <option value="">Prefer not to say</option>
           <option value="0-19">0–19</option>
           <option value="20-29">20–29</option>
@@ -86,7 +91,7 @@
         </select>
 
         <label for="gender">Gender:</label>
-        <select id="gender">
+        <select id="gender" name="gender">
           <option value="">Prefer not to say</option>
           <option value="female">Female</option>
           <option value="male">Male</option>
@@ -94,7 +99,7 @@
         </select>
 
         <label for="transport">Main transport mode:</label>
-        <select id="transport">
+        <select id="transport" name="transport">
           <option value="">Prefer not to say</option>
           <option value="walk">Walk</option>
           <option value="bike">Bike</option>
@@ -102,33 +107,37 @@
           <option value="car">Car</option>
         </select>
 
-        <!-- Download button -->
-        <br><br>
-        <button onclick="downloadData()">Download GeoJSON</button>
+        <!-- Download button (one clear behaviour) -->
+        <div class="button-row">
+          <button type="button" id="downloadButton" onclick="downloadData()">
+            Download GeoJSON
+          </button>
+        </div>
 
-      </div>
+      </section>
 
       <!-- RIGHT: map + legend -->
-      <div class="right-panel map-wrap">
+      <section class="right-panel map-wrap" aria-label="Map of Graz">
         <!-- Map -->
-        <div id="map"></div>
+        <div id="map" role="application" aria-label="Interactive map of Graz"></div>
 
         <!-- Legend -->
         <div id="legend">
-          <b>Legend</b><br>
+          <strong>Legend</strong><br>
           🟢 Safe place<br>
           🔴 Stressful place<br>
           🟠 Heated place<br>
           🔵 Place to cool down
         </div>
-      </div>
+      </section>
 
-    </div> <!-- .layout -->
+    </main> <!-- .layout -->
 
   </div> <!-- .container -->
 
   <!-- Scripts -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- If you move JS to src/, change to src="src/script.js" -->
   <script src="script.js"></script>
 
 </body>
