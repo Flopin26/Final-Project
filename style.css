@@ -223,14 +223,19 @@ button:active {
   opacity: 0.9;
 }
 
-.popup-delete {
-  font-size: 0.85rem;
-  padding: 6px 10px;
+.leaflet-popup-content button.popup-delete {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border: none;
   border-radius: 8px;
   background: #ef4444;
-  color: white;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
 }
-
-.popup-delete:hover {
+.leaflet-popup-content button.popup-delete:hover {
   background: #dc2626;
 }
