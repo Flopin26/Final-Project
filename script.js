@@ -1,196 +1,146 @@
-/* =========================
-   Map initialization
-   ========================= */
-
+// Map setup - centers on Graz city center
 const map = L.map("map", { zoomControl: false }).setView([47.0707, 15.4395], 13);
-
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "© OpenStreetMap contributors"
 }).addTo(map);
 
-/* =========================
-   Configuration
-   ========================= */
-
-const themeColors = {
-  safe: "green",
-  stressful: "red",
-  heated: "orange",
-  cool: "blue"
-};
-
-const themeRadius = {
-  safe: 7,
-  stressful: 9,
-  heated: 10,
-  cool: 8
-};
-
+// Theme settings - colors, sizes, labels for different place types
+const themeColors = { safe: "green", stressful: "red", heated: "orange", cool: "blue" };
+const themeRadius = { safe: 7, stressful: 9, heated: 10, cool: 8 };
 const themeLabel = {
   safe: "🟢 SAFE PLACE",
   stressful: "🔴 STRESSFUL PLACE",
   heated: "🟠 HEATED / VERY HOT",
   cool: "🔵 COOLING PLACE"
 };
+let pointsArray = [];  // Stores all placed points
 
-let points = [];
-
-/* =========================
-   Map click interaction
-   ========================= */
-
-map.on("click", function (e) {
-  const theme = document.getElementById("theme").value;
-  const comment = document.getElementById("comment").value;
-  const residency = document.getElementById("residency").value;
-  const age = document.getElementById("age").value;
-  const gender = document.getElementById("gender").value;
-  const transport = document.getElementById("transport").value;
-
-  // Check: Theme selected?
-  if (!theme) {
+// Handle map clicks - add marker if theme selected
+map.on("click", function (clickEvent) {
+  const selectedTheme = document.getElementById("theme").value;
+  if (!selectedTheme) {
     alert("Please select a theme before clicking on the map.");
     return;
   }
 
-  // Create marker
-  const marker = L.circleMarker(e.latlng, {
-    color: themeColors[theme],
-    fillColor: themeColors[theme],
-    radius: themeRadius[theme] || 6,
+  // Get form data
+  const userComment = document.getElementById("comment").value;
+  const residencyTime = document.getElementById("residency").value;
+  const ageGroup = document.getElementById("age").value;
+  const userGender = document.getElementById("gender").value;
+  const transportMode = document.getElementById("transport").value;
+
+  // Create colored circle marker at click location
+  const newMarker = L.circleMarker(clickEvent.latlng, {
+    color: themeColors[selectedTheme],
+    fillColor: themeColors[selectedTheme],
+    radius: themeRadius[selectedTheme] || 6,
     weight: 2,
     fillOpacity: 0.75
   }).addTo(map);
 
-  // Save point info
-  const pointData = {
-    theme: theme,
-    comment: comment,
-    residency: residency,
-    age: age,
-    gender: gender,
-    transport: transport,
-    lat: e.latlng.lat,
-    lng: e.latlng.lng,
-    marker: marker
+  // Store point data including marker reference
+  const newPointData = {
+    theme: selectedTheme,
+    comment: userComment,
+    residency: residencyTime,
+    age: ageGroup,
+    gender: userGender,
+    transport: transportMode,
+    lat: clickEvent.latlng.lat,
+    lng: clickEvent.latlng.lng,
+    marker: newMarker
   };
+  pointsArray.push(newPointData);
+  const pointIndex = pointsArray.length - 1;
 
-  points.push(pointData);
-  const index = points.length - 1;
-
-  // Popup content
-  marker.bindPopup(`
+  // Show popup with theme, comment, delete button
+  newMarker.bindPopup(`
     <div class="popup-content">
-      <div class="popup-theme">${themeLabel[theme] || theme.toUpperCase()}</div>
-      ${comment ? `<div class="popup-comment">"${comment}"</div>` : ""}
-      <button class="popup-delete" onclick="deletePoint(${index})" style="margin-top: 10px;">
+      <div class="popup-theme">${themeLabel[selectedTheme]}</div>
+      ${userComment ? `<div class="popup-comment">"${userComment}"</div>` : ""}
+      <button class="popup-delete" onclick="deletePoint(${pointIndex})">
         Delete point
       </button>
     </div>
   `);
+  newMarker.openPopup();
 
-  marker.openPopup();
-
-  // Reset comment field after placing a point
+  // Clear comment field only (keep demographics for next point)
   document.getElementById("comment").value = "";
 });
 
-/* =========================
-   Delete point
-   ========================= */
-
-function deletePoint(index) {
-  const point = points[index];
-  if (!point) return;
-
-  map.removeLayer(point.marker);
-  points[index] = null;
+// Remove single point by index
+function deletePoint(pointIndex) {
+  const pointToDelete = pointsArray[pointIndex];
+  if (!pointToDelete) return;
+  map.removeLayer(pointToDelete.marker);
+  pointsArray[pointIndex] = null;
 }
 
-/* =========================
-   Save file helper function
-   ========================= */
-
-function saveToFile(content, fileName) {
-  const blob = new Blob([JSON.stringify(content, null, 2)], {
-    type: "application/json"
-  });
-
-  const url = URL.createObjectURL(blob);
-
-  const link = document.createElement("a");
-  link.href = url;
-  link.download = fileName;
-  document.body.appendChild(link);
-  link.click();
-
-  // Cleanup
-  document.body.removeChild(link);
-  URL.revokeObjectURL(url);
-}
-
-/* =========================
-   Export to GeoJSON (BEGINNER VERSION)
-   ========================= */
-
+// Create and download GeoJSON file
 function downloadData() {
-  let features = [];
-
-  for (let i = 0; i < points.length; i++) {
-    let p = points[i];
-
-    if (p === null) {
-      continue;
-    }
-
-    let feature = {
+  const validFeatures = [];
+  for (let i = 0; i < pointsArray.length; i++) {
+    const point = pointsArray[i];
+    if (point === null) continue;
+    validFeatures.push({
       type: "Feature",
       properties: {
-        theme: p.theme,
-        comment: p.comment,
-        residency: p.residency,
-        age: p.age,
-        gender: p.gender,
-        transport: p.transport
+        theme: point.theme,
+        comment: point.comment,
+        residency: point.residency,
+        age: point.age,
+        gender: point.gender,
+        transport: point.transport
       },
-      geometry: {
-        type: "Point",
-        coordinates: [p.lng, p.lat]
-      }
-    };
-
-    features.push(feature);
+      geometry: { type: "Point", coordinates: [point.lng, point.lat] }
+    });
   }
 
-  let geojson = {
+  const geojsonData = {
     type: "FeatureCollection",
-    features: features
+    features: validFeatures
   };
 
-  if (geojson.features.length === 0) {
+  if (geojsonData.features.length === 0) {
     alert("No points to download!");
     return;
   }
 
-  let fileName = "ppgis_urban_experience_" + Date.now() + ".geojson";
-  saveToFile(geojson, fileName);
+  // Generate filename with timestamp
+  const fileName = "ppgis_urban_experience_" + Date.now() + ".geojson";
+  saveToFile(geojsonData, fileName);
 
-  alert("GeoJSON downloaded successfully!");
+  // Auto-reset after download
+  setTimeout(resetSurvey, 100);
+}
 
-  setTimeout(function () {
-    for (let i = 0; i < points.length; i++) {
-      if (points[i] !== null) {
-        map.removeLayer(points[i].marker);
-      }
+// Helper: save JSON as downloadable file
+function saveToFile(fileContent, fileName) {
+  const dataBlob = new Blob([JSON.stringify(fileContent, null, 2)], { type: "application/json" });
+  const downloadUrl = URL.createObjectURL(dataBlob);
+  const downloadLink = document.createElement("a");
+  downloadLink.href = downloadUrl;
+  downloadLink.download = fileName;
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
+  URL.revokeObjectURL(downloadUrl);
+}
+
+// Reset form and clear map
+function resetSurvey() {
+  for (let i = 0; i < pointsArray.length; i++) {
+    if (pointsArray[i] !== null) {
+      map.removeLayer(pointsArray[i].marker);
     }
-
-    points = [];
-
-    document.getElementById("theme").value = "";
-    document.getElementById("comment").value = "";
-    document.getElementById("residency").value = "";
-    document.getElementById("age").value = "";
-    document.getElementById("gender").value = "";
-    document.getElementById("transport").value = "";
-  }, 100);
+  }
+  pointsArray = [];
+  document.getElementById("theme").value = "";
+  document.getElementById("comment").value = "";
+  document.getElementById("residency").value = "";
+  document.getElementById("age").value = "";
+  document.getElementById("gender").value = "";
+  document.getElementById("transport").value = "";
 }
