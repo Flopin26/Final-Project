@@ -5,10 +5,10 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 // Theme settings - colors, sizes, labels for different place types
-const themeColors = { safe: "green", stressful: "red", heated: "orange", cool: "blue" };
-const themeRadius = { safe: 7, stressful: 9, heated: 10, cool: 8 };
+const themeColors = { relaxed: "green", stressful: "red", heated: "orange", cool: "blue" };
+const themeRadius = { relaxed: 7, stressful: 9, heated: 10, cool: 8 };
 const themeLabel = {
-  safe: "🟢 SAFE PLACE",
+  relaxed: "🟢 RELAXED PLACE",
   stressful: "🔴 STRESSFUL PLACE",
   heated: "🟠 HEATED / VERY HOT",
   cool: "🔵 COOLING PLACE"
