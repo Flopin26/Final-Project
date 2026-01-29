@@ -1,0 +1,131 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "It is my favorite place to go for a walk",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "male",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.44831156730652,
+          47.08759713467345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "male",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.461111068725588,
+          47.08507697836851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "male",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.442196130752565,
+          47.06731867129754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "male",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.41587829589844,
+          47.074357077218906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "heated",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "male",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.43656349182129,
+          47.07576876336155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "male",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.434954166412355,
+          47.062218994429365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "male",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.400407314300539,
+          47.07239458785006
+        ]
+      }
+    }
+  ]
+}

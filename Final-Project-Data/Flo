@@ -1,0 +1,131 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "10+",
+        "age": "60+",
+        "gender": "male",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.478878021240236,
+          47.083530172093006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "10+",
+        "age": "60+",
+        "gender": "male",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.47630310058594,
+          47.06090220541579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "",
+        "residency": "10+",
+        "age": "60+",
+        "gender": "male",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.430040359497072,
+          47.075319038636906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "",
+        "residency": "10+",
+        "age": "60+",
+        "gender": "male",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.431456565856935,
+          47.066771070889985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "heated",
+        "comment": "",
+        "residency": "10+",
+        "age": "60+",
+        "gender": "male",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.438365936279299,
+          47.07106563511355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "10+",
+        "age": "60+",
+        "gender": "male",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.435619354248049,
+          47.06108004697969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "10+",
+        "age": "60+",
+        "gender": "male",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.449545383453371,
+          47.084110402848005
+        ]
+      }
+    }
+  ]
+}

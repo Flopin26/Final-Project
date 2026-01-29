@@ -1,0 +1,149 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "visitor",
+        "age": "30-39",
+        "gender": "male",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.44907331466675,
+          47.084419057803444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "visitor",
+        "age": "30-39",
+        "gender": "male",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.444459915161135,
+          47.07352922324065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "",
+        "residency": "visitor",
+        "age": "30-39",
+        "gender": "male",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.451090335845949,
+          47.07838882270956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "",
+        "residency": "visitor",
+        "age": "30-39",
+        "gender": "male",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.466175079345705,
+          47.08048226151261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "heated",
+        "comment": "",
+        "residency": "visitor",
+        "age": "30-39",
+        "gender": "male",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.43682098388672,
+          47.07469703144354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "heated",
+        "comment": "",
+        "residency": "visitor",
+        "age": "30-39",
+        "gender": "male",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.441498756408693,
+          47.0667451744347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "visitor",
+        "age": "30-39",
+        "gender": "male",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.435533523559572,
+          47.062032837672625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "visitor",
+        "age": "30-39",
+        "gender": "male",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.408496856689455,
+          47.11005884191206
+        ]
+      }
+    }
+  ]
+}

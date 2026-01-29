@@ -1,0 +1,221 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "at home and with friends",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.43175049208557,
+          47.076619203439584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "exploring the city",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.438120936949154,
+          47.07283427655651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.440416013044766,
+          47.07523094101358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "at uni i feel stressed doing exams etc",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.450005234168437,
+          47.07815355667411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "at uni at libresso cafe i see my friends in between classes and i can relax with them",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.451506685819767,
+          47.07714527238299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "looking at art in the schloss i feel relaxed",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.394454473832939,
+          47.07426059717578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "walking home from friends its cold in the park",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.444214345850448,
+          47.07420214216311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "heated",
+        "comment": "it was hot in the christmas markets amoung all of the people",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.436962706388774,
+          47.07548813762977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "when i miss my bus ",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.43466295678918,
+          47.07735862109089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "exploring the main streets i enjoy",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.438187425757496,
+          47.07078825820362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "when i say goodbye to my friends",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.442327142453333,
+          47.067485234261675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "i enjoy walking along the river in the day and at night is calming",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.434915029750965,
+          47.073699426385154
+        ]
+      }
+    }
+  ]
+}

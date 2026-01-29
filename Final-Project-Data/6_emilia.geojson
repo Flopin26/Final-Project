@@ -1,0 +1,311 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.444768016952173,
+          47.07473870801145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.449230245980013,
+          47.08514258542699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.436244688427168,
+          47.061658527449566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.44231589426787,
+          47.06728585267982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.416891095233678,
+          47.072386473158495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.452694446405813,
+          47.07520740720795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "heated",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.437296461647646,
+          47.071874362684305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "heated",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.450597336634376,
+          47.07783670413096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "heated",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.425630636557228,
+          47.071172866891295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.43475293931461,
+          47.06155651148181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.43796016642834,
+          47.05094334734478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.435997214716602,
+          47.058611058558725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.446627188193933,
+          47.0714441495903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.435770821867095,
+          47.07612439553346
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.452293588337874,
+          47.060060965165306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.383815535180286,
+          47.072689109117526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.484977089034404,
+          47.0960690960454
+        ]
+      }
+    }
+  ]
+}

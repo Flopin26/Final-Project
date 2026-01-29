@@ -1,0 +1,59 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "\"This is a nice spot to read and take stroll along. Specially enjoyable in spring and summer.\"",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "male",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.443226793554988,
+          47.076738147828316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "Nice place to read and relax with a great view into Herz-Jesu-Kirche. Really nice when the sun's up.",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "male",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.45527482211308,
+          47.069273595828754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "male",
+        "transport": "walk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.435056944087846,
+          47.071794643139214
+        ]
+      }
+    }
+  ]
+}

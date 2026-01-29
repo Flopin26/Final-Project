@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "heated",
+        "comment": "",
+        "residency": "10+",
+        "age": "",
+        "gender": "",
+        "transport": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.440050804290687,
+          47.069858526983865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "10+",
+        "age": "",
+        "gender": "",
+        "transport": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.441117924535376,
+          47.06934346160677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "10+",
+        "age": "",
+        "gender": "",
+        "transport": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.441857937342368,
+          47.068846546111075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "heated",
+        "comment": "",
+        "residency": "visitor",
+        "age": "50-59",
+        "gender": "male",
+        "transport": "car"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.44298965298481,
+          47.069839154547324
+        ]
+      }
+    }
+  ]
+}

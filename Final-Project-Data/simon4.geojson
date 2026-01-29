@@ -1,0 +1,113 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.438222135972477,
+          47.07120928918203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.466171417081695,
+          47.08013603363078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.435866668905922,
+          47.06612804405173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.43877979869416,
+          47.06799885604389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "heated",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.44074961921877,
+          47.073750833808255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.443973203409234,
+          47.0724405535384
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "male",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.461475849151613,
+          47.084096233408275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "male",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.421296358108522,
+          47.06568880364861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "heated",
+        "comment": "",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "male",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.449116230010988,
+          47.07578645167492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "There is no actual cooling point in Graz in my opinion!",
+        "residency": "4-10",
+        "age": "20-29",
+        "gender": "male",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.448483228683473,
+          47.08550490218709
+        ]
+      }
+    }
+  ]
+}

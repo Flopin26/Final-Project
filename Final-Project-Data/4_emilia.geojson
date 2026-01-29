@@ -1,0 +1,203 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "1-3",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.444471325281304,
+          47.075088215763806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "1-3",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.435718491419081,
+          47.061642083040546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "",
+        "residency": "1-3",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.44206080983897,
+          47.06737354655394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "heated",
+        "comment": "",
+        "residency": "1-3",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.442467422637602,
+          47.067154311598145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "heated",
+        "comment": "",
+        "residency": "1-3",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.446672215375358,
+          47.06649660132049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "1-3",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.435239434738998,
+          47.06144515656483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "1-3",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.44310755993817,
+          47.045902105808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "1-3",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.44377210504779,
+          47.07463154136357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "1-3",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.455699986487545,
+          47.069516520705086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "heated",
+        "comment": "",
+        "residency": "1-3",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.455228019955769,
+          47.0694580604888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "1-3",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.449243696548912,
+          47.08489643413767
+        ]
+      }
+    }
+  ]
+}

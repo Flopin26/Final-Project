@@ -1,0 +1,113 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.444369147338396,
+          47.07483435612109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "auer has nice coffee and relaxed atmosphere",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.449825712976486,
+          47.076148192803274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "stressful",
+        "comment": "confusing building and hard courses",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.451252339083934,
+          47.07822323070616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "relaxed",
+        "comment": "nice view and climbing wall closeby",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.433306423562431,
+          47.07761487387333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "heated",
+        "comment": "walking up schlossberg in summer",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.437469573184032,
+          47.07426457544976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "theme": "cool",
+        "comment": "",
+        "residency": "<1",
+        "age": "20-29",
+        "gender": "female",
+        "transport": "bike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.436156377764187,
+          47.06833715510612
+        ]
+      }
+    }
+  ]
+}
