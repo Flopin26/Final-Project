@@ -1,9 +1,9 @@
 PPGIS Urban Experience Survey - Graz
 
-What
+What:
 Interactive web map for participatory GIS (PPGIS) survey. Users mark places in Graz as relaxed/stressful/heated/to cool down with demographics. Exports clean GeoJSON for GIS analysis (QGIS/ArcGIS).
 
-Why
+Why:
 University course project (GIS & Digital Geographies 2025W) studying urban experiences. Anonymous data collection.
 
 How to Use
