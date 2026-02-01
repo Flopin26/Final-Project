@@ -23,7 +23,6 @@ map.on("click", function (clickEvent) {
     return;
   }
 
-  // Get form data
   const userComment = document.getElementById("comment").value;
   const residencyTime = document.getElementById("residency").value;
   const ageGroup = document.getElementById("age").value;
